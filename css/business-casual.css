@@ -33,7 +33,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: "Roboto","",Helvetica,Arial,sans-serif;*/
     font-weight: 700;
     letter-spacing: 1px;
     color: grey;
@@ -367,19 +367,6 @@ footer .container .row{
     margin-right: 50%;
     }*/
 }
-@media screen and (min-width:1200px) {
-    .box:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-
-    .thumb-pad1 figure {
-    /*margin: 0 0 13px 0;*/
-    margin-left: 0%;
-    margin-right: 0%;
-    }
-}
 
 /*/* Tablet (portrait and landscape) ----------- */
 
@@ -387,8 +374,21 @@ footer .container .row{
 
 /* Smartphones (portrait and landscape) ----------- */
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-   #toTop {
-    display: none;
+   #toTop {@media screen and (min-width:1200px) {
+   .box:after {
+       content: '';
+       display: table;
+       clear: both;
+   }
+
+   .thumb-pad1 figure {
+       /*margin: 0 0 13px 0;*/
+       margin-left: 0%;
+       margin-right: 0%;
+   }
+   }
+
+   display: none;
    }
  .box-inner{
     margin: 0;
