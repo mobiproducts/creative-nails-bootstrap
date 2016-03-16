@@ -67,8 +67,9 @@ h1.navbar-brand_ a img {
     width: 100%;
 
 }
-
-
+.welcome-text{
+    padding-top: 20px;
+}
 .brand,
 .address-bar {
     display: none;
